@@ -1,0 +1,8 @@
+create table register( name varchar2(100),mail varchar2(100), pwd varchar2(100),mobile varchar2(100),gender varchar2(100),pincode varchar(100),about varchar(100));
+
+
+create table admin(email varchar2(100), pwd varchar2(100));
+
+
+
+

@@ -1,0 +1,116 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <style>
+                body 
+                {
+                    background-image:"bg.jpg";		
+                    background-repeat:no-repeat;
+                    background-size:100% 100%;
+                      
+                   }
+            </style>
+       
+        <title>Cal1</title>
+        <script>
+            function fillCosts(){
+                var cb = document.getElementById("item1").value;
+                var db = document.getElementById("item2").value;
+                var mb = document.getElementById("item3").value;
+                var pb = document.getElementById("item4").value;
+
+                var totcost = 0;
+                var cbc = cb*250;
+                var dbc = db*300;
+                var mbc = mb*500;
+                var pbc = pb*400;
+                totcost = cbc+dbc+mbc+pbc;
+                 
+                document.getElementById("cbc").value = cbc;
+                document.getElementById("dbc").value = dbc;
+                document.getElementById("mbc").value = mbc;
+                document.getElementById("pbc").value = pbc;
+                document.getElementById("totcost").value = totcost;
+                
+                
+            }
+        </script>
+    </head>
+    
+    
+    
+    <body background="https://tse4.mm.bing.net/th?id=OIP.HWWP0R9gZAhSDSecz07t3AHaEo&pid=Api&P=0&w=282&h=176">
+
+    <div> 
+        <font size="7">
+        <table align="center" width="50%" height="70%" >
+            <tr>
+               
+              <th><font size="10px">Item</font></th>
+                <td>     </td>
+                <th><font size="10px">Price</font></th>
+                <td>     </td>
+                <th><font size="10px">Quantity</font></th>
+                <td>     </td>
+                <th><font size="10px">Total</font></th>
+                <td>     </td>
+            
+            </tr>
+            <tr>
+                <td><h1>Chicken biriyani</h1></td>
+                <td>     </td>
+                <td><h1>250</h1></td>
+                <td>     </td>
+                <td> <h1><input type="number" value="" id="item1"></h1></td>
+                <td>     </td>
+                <td><h1><input type="text" id="cbc"></h1></td>
+            </tr>
+            <tr>
+                <td><h1>Dum biriyani</h1></td>
+                <td>     </td>
+                <td><h1>300</h1></td>
+                <td>     </td>
+               <td> <input type="number" value="" id="item2"></td>
+               <td>     </td>
+                <td><input type="text" id="dbc"></td>
+            </tr>
+            <tr>
+                <td><h1>Mutton biriyani</h1></td>
+                <td>     </td>
+                <td><h1>500</h1></td>
+                <td>     </td>
+               <td> <input type="number" value="" id="item3"></td>
+               <td>     </td>
+                <td><input type="text" id="mbc"></td>
+            </tr>
+            <tr>
+                <td><h1>prawns biriyani</h1></td>
+                <td>     </td>
+                <td><h1>400</h1></td>
+                <td>     </td>
+               <td> <input type="number" value="" id="item4"></td>
+               <td>     </td>
+                <td><input type="text" id="pbc"></td>
+            </tr>
+            <tr>
+                
+                <td>
+                <a href="order_now.html">
+                    <button>Confirm order</button>
+                </a>
+                </td>
+                <td>        </td>
+                <td>   <input type="button" value="Calculate Cost"  onclick="fillCosts()"/>    </td>
+                <td>       </td>
+                <td><a href="dish.html"><button>Cancel order</button></a></td>
+                <td>     </td>
+                <td><input type="text" id="totcost"></td>
+            </tr>
+        </table>
+        </font>
+        
+
+    </div>
+</body></html>
